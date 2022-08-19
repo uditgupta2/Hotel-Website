@@ -1,0 +1,314 @@
+/* RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* main styling cgontain all those things which do not have any class and id */
+/* MAIN STYLING */
+
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+/* utility classes*/
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0px 20px;
+}
+
+.primarytext {
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 20px;
+  padding: 2px;
+}
+
+.bgdark {
+  background-color: #333;
+  color: #ddd;
+}
+
+.bglight {
+  background-color: #fff;
+}
+
+.bgprimary {
+  background-color: #f7c08a;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+/* utility class for padding */
+.py1 {
+  padding: 0px 10px;
+}
+.py2 {
+  padding: 0px 20px;
+}
+.py3 {
+  padding: 0px 30px;
+}
+
+.clr {
+  clear: both;
+}
+
+/* navbar */
+#navbar {
+  background-color: #333;
+  color: #fff;
+  overflow: auto;
+}
+#navbar a {
+  color: #fff;
+}
+
+#navbar .logo {
+  float: left;
+  padding-top: 20px;
+}
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background-color: #514f4f;
+  color: #f7c08a;
+}
+
+/* SHOWCASE */
+#showcase {
+  background: url("image_resources/showcase.jpg") no-repeat center center/cover;
+  height: 600px;
+}
+
+#showcase .showcasecontent {
+  text-align: center;
+  padding-top: 170px;
+  font-size: 30px;
+  line-height: 1.2em;
+  color: whitesmoke;
+  overflow: hidden;
+}
+
+#showcase .showcasecontent h1 {
+  padding-bottom: 30px;
+}
+
+#showcase .showcasecontent p {
+  padding-bottom: 20px;
+  line-height: 1.5em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: whitesmoke;
+  font-size: 18px;
+  border: none;
+}
+.btn:hover {
+  background-color: #f7c08a;
+  color: black;
+}
+
+/* INFOHOME */
+#infohome {
+  height: 400px;
+}
+
+#infohome .infoimage {
+  background: url("/image_resources/photo-1.jpg");
+  min-height: 100%;
+  float: left;
+  width: 50%;
+}
+
+#infohome .infocontent {
+  min-height: 100%;
+  width: 50%;
+  text-align: center;
+  padding: 50px 30px;
+  background-color: #333;
+  color: #fff;
+  overflow: hidden;
+}
+
+#infohome .infocontent p {
+  padding-bottom: 30px;
+}
+
+.btn-light {
+  color: #333;
+  background-color: aliceblue;
+}
+
+/* Facilities section */
+
+.box {
+  float: left;
+  width: 33.33%;
+  height: 300px;
+  padding: 50px;
+  text-align: center;
+  color: #333;
+}
+
+i {
+  padding-bottom: 10px;
+}
+
+/* ABOUT INFO */
+#about-info .right-info {
+  width: 50%;
+  min-height: 100%;
+  float: right;
+}
+
+#about-info .right-info img {
+  display: block;
+  /* display block is necessary for margin auto
+  because image is an inline element, fo inline element margin auto doesnt work */
+  margin: auto;
+  width: 70%;
+  min-height: 100%;
+  border-radius: 30%;
+  padding: 10px;
+}
+
+#about-info .left-info {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .left-info h1 {
+  font-size: 40px;
+  padding: 10px;
+}
+
+#testimonials {
+  background: url("/image_resources/test-bg.jpg") no-repeat center center/cover;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#testimonials .testimonial {
+  background-color: #f7c08a;
+  opacity: 0.9;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+#testimonials .testimonial img {
+  width: 90px;
+  border-radius: 50%;
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#testimonials .testimonial p {
+  padding-top: 40px;
+}
+
+#testimonials h1 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 40px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* CONTACTS */
+
+#contact h1 {
+  font-size: 40px;
+  padding: 20px;
+}
+
+#contact .formgroup {
+  margin-bottom: 20px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+#contact textarea {
+  height: 200px;
+}
+
+#contact button {
+  margin-bottom: 20px;
+}
+
+#contact button:hover {
+  color: #333;
+  background-color: #f7c08a;
+}
+
+/* CONTACT DETAILS */
+#details .bgdark {
+  color: #ddd;
+  font-size: larger;
+}
+
+/* FOOTER */
+#mainfooter {
+  text-align: center;
+  background-color: rgb(99, 99, 99);
+  color: antiquewhite;
+  padding: 20px;
+}
